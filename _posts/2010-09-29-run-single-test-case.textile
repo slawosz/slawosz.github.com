@@ -9,7 +9,7 @@ In TestUnit, run test file with `-n` switch:
 ruby -n "name_of_test_method" path/to/test_file.rb
 {% endhighlight %}
 or use regexp:
-{% highlight %}
+{% highlight bash %}
 ruby -n "/name of test method/" path/to/test_file.rb
 {% endhighlight %}
 Regexp is very convinient when you work with shoulda.
