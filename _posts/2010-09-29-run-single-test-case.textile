@@ -7,7 +7,7 @@ When you use common TestUnit (maybe with great gem "Shoulda":http://github.com/t
 In TestUnit, run test file with `-n` switch:
 {% highlight bash }
 ruby -n "name_of_test_method" path/to/test_file.rb
-{ endhighlight  %}
+{ endhighlight %}
 or use regexp:
 {% highlight bash }
 ruby -n "/name of test method/" path/to/test_file.rb
