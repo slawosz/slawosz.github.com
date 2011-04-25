@@ -72,6 +72,11 @@ ul.posts {
     font-size: 80%;
   }
 
+  ul.posts li div.preview {
+    height: 200px;
+    overflow: hidden;
+  }
+
 /*****************************************************************************/
 /*
 /* Site
