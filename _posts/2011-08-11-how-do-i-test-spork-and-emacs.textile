@@ -1,12 +1,12 @@
---- 
+---
 title: "How do I test? Spork and Emacs experience."
 layout: post
 categories: ['en']
 ---
 
- Few weeks ago "Ryan Bates":https://github.com/ryanb created a "screencast":http://railscasts.com/episodes/275-how-i-test about testing. He uses "Guard":https://github.com/guard/guard to run specs. Guard watches changes in files and may run appropriate specs files, which is very convenient. However, I have a little different way to run specs. 
+ Few weeks ago "Ryan Bates":https://github.com/ryanb created a "screencast":http://railscasts.com/episodes/275-how-i-test about testing. He uses "Guard":https://github.com/guard/guard to run specs. Guard watches changes in files and may run appropriate specs files, which is very convenient. However, I have a little different way to run specs.
 
-I do not always like to run full spec file, very often I need only to run one spec. To accomplish it very easily, I use few functions in my emacs, thanks to "rinari":https://github.com/eschulte/rinari mode:
+I do not always like to run full spec file, very often I need only to run one spec. To accomplish it very easily, I use few functions in my emacs, thanks to <span class="strike">"rinari":https://github.com/eschulte/rinari mode</span> "emacs-rails":https://github.com/remvee/emacs-rails mode:
 
 <code>rails-spec:run-this-spec</code> - runs specs with current line as rspec line parameters. I use this command very very often (<code>C-c C-c ,</code> shortcut)
 
