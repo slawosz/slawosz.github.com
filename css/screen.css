@@ -183,6 +183,10 @@ ul.posts {
     background-color: #333;
   }
 
+  #post span.strike {
+    text-decoration: line-through;
+  }
+
 #related {
   margin-top: 2em;
 }
