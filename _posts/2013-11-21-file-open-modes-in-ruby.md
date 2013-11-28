@@ -1,3 +1,9 @@
+---
+title: "File open modes in ruby."
+layout: post
+categories: ['en']
+---
+
 Since I don't use file opening to often in ruby, I am writing them down here:
 
 ```
