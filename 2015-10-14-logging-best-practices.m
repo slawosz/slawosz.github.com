@@ -3,7 +3,6 @@ title: "Logging best practices"
 layout: post
 categories: ['en']
 ---
-# Logging best practices
 
 Logs are one the most fundamental tools to debug and find issues within your application. Below, I am noting down few important practices which 
 would help you to have nice, easy to follow log entries
