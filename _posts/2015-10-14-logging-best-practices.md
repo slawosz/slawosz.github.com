@@ -27,9 +27,11 @@ Logs should be like
 [unique-id] Completed 200 OK in 7ms
 ```
 
+
 ## Log events and add tags to them
 
 Consider following log entry:
+
 ```
 Started POST /friends/import
 Saved 1334 entries
