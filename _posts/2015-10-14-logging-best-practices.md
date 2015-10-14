@@ -12,6 +12,7 @@ Unlike standard apache/nginx logs, modern applications can produce many lines of
 unique identifier (UID) to every log line:
 
 Instead
+
 ```
 Started GET /login
 Authentication successful
@@ -19,6 +20,7 @@ Completed 200 OK in 7ms
 ```
 
 Logs should be like
+
 ```
 [unique-id] Started GET /login
 [unique-id] Authentication successful
@@ -64,6 +66,7 @@ Sometimes its very useful to add 2 time metrics to every log line:
 * **Time passed from last log entry in given request** - can be used to perform more sophisticated debugging 
  
 Consider such entries:
+
 ```
 [unique-id-123][24 ms][1ms] fb import started
 [unique-id-123][1240 ms][1000ms][fb-friends-import] Saved 1334 entries
@@ -71,6 +74,7 @@ Consider such entries:
 [unique-id-789][14 ms][1ms][fb-friends-import] fb import started
 [unique-id-789][24 ms][10ms][fb-friends-import] Saved 130 entries
 ```
+
 First timestamp is time from beginning of request, second - from previous log message. From above entries we can see, that our import algoritm took ~ 10 ms for 130 entries, but ~ 1s (1000ms) for 1334 entries. 
 
 Maybe it is O(n2) - probably yes, few more log entries would help us find out? 
