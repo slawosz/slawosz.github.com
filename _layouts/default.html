@@ -1,83 +1,145 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-<head>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title>{{ page.title }}</title>
-   <link href="http://feeds.feedburner.com/slawosz" rel="alternate" title="Sławosz Sławiński Programming Blog" type="application/atom+xml" />
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/img/favicon.ico">
+    <title>{{ page.title }}</title>
+    <!-- Bootstrap core CSS -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="/assets/css/mediumish.css" rel="stylesheet">
+    <link href="/assets/css/vim.css" rel="stylesheet">
+    <link href="/assets/css/overrides.css" rel="stylesheet">
+  </head>
+  <body>
 
-   <!-- syntax highlighting CSS -->
-   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+    <!-- Begin Nav ================================================== -->
+    <nav class="navbar navbar-toggleable-md navbar-light bg-white fixed-top mediumnavigation">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="container">
+        <!-- Begin Logo -->
+        <a class="navbar-brand" href="index.html">
+          slawosz.github.io
+        </a>
+        <!-- End Logo -->
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <!-- Begin Menu -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Stories <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="post.html">Post</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="author.html">Author</a>
+            </li>
+          </ul>
+          <!-- End Menu -->
+        </div>
+      </div>
+    </nav>
+    <!-- End Nav ================================================== -->
+    <!-- Begin Site Title ================================================== -->
+    <div class="container all-posts">
+      <div class="mainheading">
+        <h1 class="sitetitle">Slawosz programming blog</h1>
+        <p class="lead">
+        Backent, databases, distributed systems and more.
+        </p>
+      </div>
+      <!-- End Site Title ================================================== -->
 
-   <!-- Homepage CSS -->
-   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+      {{ content }}
+      <!-- Begin Featured ================================================== -->
 
-   <!-- Typekit -->
-   <script type="text/javascript" src="http://use.typekit.com/jpd0pfm.js"></script>
-   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-</head>
-<body>
+      <!-- begin post -->
+      <div class="card">
+        <div class="row">
+          <div class="col-md-5 wrapthumbnail">
+            <a href="post.html">
+              <div class="thumbnail" style="background-image:url(assets/img/demopic/1.jpg);">
+              </div>
+            </a>
+          </div>
+          <div class="col-md-7">
+            <div class="card-block">
+              <h2 class="card-title"><a href="post.html">We're living some strange times</a></h2>
+              <h4 class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</h4>
+              <div class="metafooter">
+                <div class="wrapfooter">
+                  <span class="meta-footer-thumb">
+                    <a href="author.html"><img class="author-thumb" src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&amp;d=mm&amp;r=x" alt="Sal"></a>
+                  </span>
+                  <span class="author-meta">
+                    <span class="post-name"><a href="author.html">Steve</a></span><br/>
+                    <span class="post-date">22 July 2017</span><span class="dot"></span><span class="post-read">6 min read</span>
+                  </span>
+                  <span class="post-read-more"><a href="post.html" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end post -->
 
-<div class="site">
-  <div class="title">
-    <a href="/">Sławosz Sławiński</a>
-    <a class="extra" href="/">home</a>
-  </div>
-  
-  {{ content }}
-  
-  <div class="footer">
-    <div class="contact">
-      <p>
-        Sławosz Sławiński
-      </p>
+      <!-- End List Posts ================================================== -->
+
+      <!-- Begin Footer ================================================== -->
+      <div class="footer">
+        <p class="pull-left">
+        Copyright &copy; 2017 Your Website Name
+        </p>
+        <p class="pull-right">
+        Mediumish Theme by <a target="_blank" href="https://www.wowthemes.net">WowThemes.net</a>
+        </p>
+        <div class="clearfix">
+        </div>
+      </div>
+      <!-- End Footer ================================================== -->
+
     </div>
-    <div class="contact">
-      <p>
-        <a href="http://github.com/slawosz/">github.com/slawosz</a><br />
-      </p>
-    </div>
-    <div class="contact">
-      <p>
-        Layout borrowed from:<br/>
-        <a href="http://tom.preston-werner.com/">tom.preston-werner.com</a>
-      </p>
-    </div>
-    <div class="rss">
-      <p>
+    <!-- /.container -->
 
-<a href="http://feeds.feedburner.com/slawosz">Subscribe my posts :)</a><br/>
+    <!-- Bootstrap core JavaScript ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 
-      </p>
-    </div>
-  </div>
-</div>
-
-<a href="http://github.com/slawosz"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
-
-<!--- BEGIN GOOGLE ANALYTICS ------>
-<script type="text/javascript">
+    <!--- BEGIN GOOGLE ANALYTICS ------>
+    <script type="text/javascript">
 
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-18022361-1']);
-  _gaq.push(['_trackPageview']);
+      var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-18022361-1']);
+_gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
 
-</script>
-<!--- END GOOGLE ANALYTICS ------>
-<script type="text/javascript">
-var disqus_shortname = 'slawosz';
+    </script>
+    <!--- END GOOGLE ANALYTICS ------>
+    <script type="text/javascript">
+      var disqus_shortname = 'slawosz';
 (function () {
   var s = document.createElement('script'); s.async = true;
   s.src = 'http://disqus.com/forums/slawosz/count.js';
   (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }());
-</script>
-
-</body>
+    </script>
+  </body>
 </html>
