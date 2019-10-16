@@ -1,7 +1,7 @@
 ---
 title: "How to list postgres procedures"
 layout: post
-categories: ['en']
+categories: ['en', 'featured']
 ---
 
 I needed to list all stored procedures on my postgres database. As usual, stack overflow helped:

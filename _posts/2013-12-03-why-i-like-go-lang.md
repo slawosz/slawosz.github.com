@@ -1,7 +1,7 @@
---- 
+---
 title: "Why I like go lang"
 layout: post
-categories: ['en']
+categories: ['en', 'featured']
 ---
 
 I was asked once by [https://github.com/jjperezaguinaga](https://github.com/jjperezaguinaga):
