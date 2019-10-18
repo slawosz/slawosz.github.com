@@ -1,6 +1,7 @@
---- 
+---
 title: "Run single test case to speed up development"
 layout: post
+old_url: /2010/09/29/run-single-test-case
 categories: ['en']
 ---
 When you use common TestUnit (maybe with great gem "Shoulda":http://github.com/thoughtbot/shoulda) or "RSpec":http://rspec.info/, you may speed up development by running only single test case.

@@ -1,6 +1,7 @@
 ---
 title: "Why I like go lang"
 layout: post
+old_url: /2013/12/03/why-i-like-go-lang
 categories: ['en', 'featured']
 ---
 

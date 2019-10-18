@@ -1,6 +1,7 @@
 ---
 title: "How to list postgres procedures"
 layout: post
+old_url: /2015/08/01/how-to-list-postgres-procedures
 categories: ['en', 'featured']
 ---
 

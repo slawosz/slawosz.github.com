@@ -1,9 +1,10 @@
---- 
+---
 title: "Add new resource with ajax"
 layout: post
+old_url: /2011/04/26/add-new-resource-with-ajax
 categories: ['en']
 ---
-In "Railscast 258":http://railscasts.com/episodes/258-token-fields "Ryan Bates":https://github.com/ryanb shows how to use "Token Fields":http://loopj.com/jquery-tokeninput/, javascript plugin which helps adding entries for <code>many</code> and <code>many to many</code> association. In this article I will exetend railscast and show you how to create not existing entries with ajax. 
+In "Railscast 258":http://railscasts.com/episodes/258-token-fields "Ryan Bates":https://github.com/ryanb shows how to use "Token Fields":http://loopj.com/jquery-tokeninput/, javascript plugin which helps adding entries for <code>many</code> and <code>many to many</code> association. In this article I will exetend railscast and show you how to create not existing entries with ajax.
 
 You can "download":https://github.com/slawosz/Add-resource-with-ajax-and-facebox-tutorial application for this tutorial from github or use it on "heroku":http://add-new-resource-with-ajax.heroku.com/ to see how it works. I started with application created by Ryan in 258 episode.
 
@@ -26,7 +27,7 @@ and place stylesheet and javascript in our layout <code>app/views/layouts/applic
 
 Now it is time to show form for new author resource on facebox.
 
-Lets add link in <code>app/views/books/_form.html.erb</code> partial: 
+Lets add link in <code>app/views/books/_form.html.erb</code> partial:
 
 {% highlight rhtml %}
 <%= f.label :author_tokens, "Authors" %><%= link_to 'Add new author', new_author_path, :remote => true %><br />
@@ -43,10 +44,10 @@ $.facebox('<%= escape_javascript(render :template => 'books/new.html') %>');
 
 Code above generate a form on facebox with <code>app/views/books/new.html.erb</code> template. We have to add write new.html to generate html. Much more often in rich ajax Rails application we use partials, but I would like to show how to achieve our goal with minimal effort.
 
-If you would like to know more about using facebox, see <code>public/javascripts/facebox.js</code>. Every use case is described in this file. 
+If you would like to know more about using facebox, see <code>public/javascripts/facebox.js</code>. Every use case is described in this file.
 
 Now, we want to send our form and create a new author.
-Normaly, we can use 
+Normaly, we can use
 
 {% highlight ruby %}
 :remote => true
@@ -59,7 +60,7 @@ $('#facebox form').data('remote','true');
 {% endhighlight %}
 
  This will add attribute <code>data-remote='true'</code> to our form, and with this attribute, <code>public/javascripts/rails.js</code> will process our form with ajax. After submiting, the request goes to method create in <code>AuthorsController</code> and  is looking for js template. In this template, we need only close facebok. So, we create file <code>app/views/authors/create.js.erb</code> and write:
- 
+
 {% highlight rhtml %}
 $(document).trigger('close.facebox');
 {% endhighlight %}

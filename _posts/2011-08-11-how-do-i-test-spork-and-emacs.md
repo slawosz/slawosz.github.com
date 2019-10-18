@@ -1,6 +1,7 @@
 ---
 title: "How do I test? Spork and Emacs experience."
 layout: post
+old-url: /2011/08/11/how-do-i-test-spork-and-emacs
 categories: ['en']
 ---
 

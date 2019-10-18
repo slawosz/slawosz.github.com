@@ -1,6 +1,7 @@
 ---
 title: "Business seconds - my first gem"
 layout: post
+old_url: /2010/08/16/business-seconds-my-first-gem
 categories: ['en']
 ---
 In June, I have released my first gem, "business seconds":http://github.com/slawosz/business_seconds It is very simple extension for "business time":http://github.com/bokmann/business_time

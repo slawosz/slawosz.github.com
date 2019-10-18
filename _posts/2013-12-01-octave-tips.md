@@ -1,6 +1,7 @@
---- 
+---
 title: "Octave tips"
 layout: post
+old_url: /2013/12/01/octave-tips
 categories: ['en']
 ---
 
