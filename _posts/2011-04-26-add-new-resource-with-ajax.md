@@ -2,7 +2,7 @@
 title: "Add new resource with ajax"
 layout: post
 old_url: /2011/04/26/add-new-resource-with-ajax
-categories: ['en']
+categories: ['published']
 ---
 In "Railscast 258":http://railscasts.com/episodes/258-token-fields "Ryan Bates":https://github.com/ryanb shows how to use "Token Fields":http://loopj.com/jquery-tokeninput/, javascript plugin which helps adding entries for <code>many</code> and <code>many to many</code> association. In this article I will exetend railscast and show you how to create not existing entries with ajax.
 

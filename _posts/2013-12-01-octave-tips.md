@@ -2,7 +2,7 @@
 title: "Octave tips"
 layout: post
 old_url: /2013/12/01/octave-tips
-categories: ['en']
+categories: ['published']
 ---
 
 I am taking Coursera Machine Learning course, which requires octave usage for programming assighments. Here are some tricks I learned:

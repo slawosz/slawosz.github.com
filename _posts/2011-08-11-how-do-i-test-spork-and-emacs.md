@@ -2,7 +2,7 @@
 title: "How do I test? Spork and Emacs experience."
 layout: post
 old-url: /2011/08/11/how-do-i-test-spork-and-emacs
-categories: ['en']
+categories: ['published']
 ---
 
  Few weeks ago "Ryan Bates":https://github.com/ryanb created a "screencast":http://railscasts.com/episodes/275-how-i-test about testing. He uses "Guard":https://github.com/guard/guard to run specs. Guard watches changes in files and may run appropriate specs files, which is very convenient. However, I have a little different way to run specs.

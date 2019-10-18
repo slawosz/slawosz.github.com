@@ -2,7 +2,7 @@
 title: "Why I like go lang"
 layout: post
 old_url: /2013/12/03/why-i-like-go-lang
-categories: ['en', 'featured']
+categories: ['published', 'featured']
 ---
 
 I was asked once by [https://github.com/jjperezaguinaga](https://github.com/jjperezaguinaga):

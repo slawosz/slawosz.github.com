@@ -2,7 +2,7 @@
 title: "Format json on vim properly."
 layout: post
 old_url: /2013/11/28/format-json-on-vim-properly
-categories: ['en']
+categories: ['published']
 ---
 
 To make json nicer in vim, just do:

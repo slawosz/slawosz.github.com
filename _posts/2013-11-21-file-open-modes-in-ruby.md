@@ -2,7 +2,7 @@
 title: "File open modes in ruby."
 layout: post
 old_url: /2013/11/21/file-open-modes-in-ruby
-categories: ['en']
+categories: ['published']
 ---
 
 Since I don't use file opening to often in ruby, I am writing them down here:

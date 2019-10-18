@@ -2,7 +2,7 @@
 title: "Logging best practices"
 layout: post
 old_url: /2015/10/14/logging-best-practices
-categories: ['en', 'featured']
+categories: ['published', 'featured']
 ---
 
 Logs are one of the most fundamental tools for debugging and finding issues
