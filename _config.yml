@@ -1,5 +1,7 @@
 markdown: kramdown
 pygments: true
-permalink: "/:year/:month/:day/:title"
-#permalink: "/blog/:title"
+#permalink: "/:year/:month/:day/:title"
+permalink: "/:title"
 lsi: false
+plugins:
+  - jekyll-redirect-from

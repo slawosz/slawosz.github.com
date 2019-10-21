@@ -1,0 +1,32 @@
+.all-posts a {
+  color: rgba(0,0,0,.8);
+}
+
+.all-posts h4.card-text, .listrecent h4.card-text {
+  color: rgba(0,0,0,.44);
+  font-size: 1.15rem;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.all-posts .card {
+  border: 0px;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+  border-radius: 0px;
+}
+
+.all-posts .author-meta {
+  padding-top: 5px;
+}
+
+.highlight {
+  line-height: 1;
+  padding: 0.5rem;
+  font-size: 90%;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.article-post {
+  font-size: 1.4rem;
+}

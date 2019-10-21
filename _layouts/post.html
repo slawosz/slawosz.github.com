@@ -89,7 +89,7 @@
             <div class="row post-top-meta">
               <div class="col-md-10">
                 <span class="post-date">{{ page.date | date_to_string }}</span>
-                <span class="dot"></span><span class="post-read">6 min read</span>
+                <span class="dot"></span><span class="post-read">{{ post.read_time }}</span>
               </div>
             </div>
             <!-- End Top Menta -->
@@ -99,7 +99,7 @@
           </div>
 
           <!-- Begin Featured Image -->
-          <img class="featured-image img-fluid" src="assets/img/demopic/10.jpg" alt="">
+          <!-- <img class="featured-image img-fluid" src="" alt=""> -->
           <!-- End Featured Image -->
 
           <!-- Begin Post Content -->
@@ -109,6 +109,7 @@
           <!-- End Post Content -->
 
           <!-- Begin Tags -->
+          <!--
           <div class="after-post-tags">
             <ul class="tags">
               <li><a href="#">Design</a></li>
@@ -117,6 +118,7 @@
               <li><a href="#">Personal Growth</a></li>
             </ul>
           </div>
+          -->
           <!-- End Tags -->
 
         </div>
@@ -135,15 +137,15 @@
           <!-- begin post -->
             <div class="col-md-4">
               <div class="card">
-                <a href="post.html">
+                <!-- <a href="post.html">
                   <img class="img-fluid img-thumb" src="assets/img/demopic/9.jpg" alt="">
-                </a>
+                </a> -->
                 <div class="card-block">
                   <h2 class="card-title"><a href="post.html">{{ post.title }}</a></h2>
                   <div class="metafooter">
                     <div class="wrapfooter">
                       <span class="author-meta">
-                        <span class="post-date">{{ post.date | date_to_string }}</span><span class="dot"></span><span class="post-read">6 min read</span>
+                        <span class="post-date">{{ post.date | date_to_string }}</span><span class="dot"></span><span class="post-read">{{ post.read_time }}</span>
                       </span>
                     </div>
                   </div>

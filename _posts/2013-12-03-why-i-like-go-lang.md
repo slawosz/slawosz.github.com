@@ -1,7 +1,8 @@
 ---
 title: "Why I like go lang"
 layout: post
-old_url: /2013/12/03/why-i-like-go-lang
+redirect_from: /2013/12/03/why-i-like-go-lang
+read_time: short read
 categories: ['published', 'featured']
 ---
 

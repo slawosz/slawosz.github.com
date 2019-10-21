@@ -1,7 +1,8 @@
 ---
 title: "Octave tips"
 layout: post
-old_url: /2013/12/01/octave-tips
+redirect_from: /2013/12/01/octave-tips
+read_time: short read
 categories: ['published']
 ---
 

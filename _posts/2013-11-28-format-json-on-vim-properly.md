@@ -1,7 +1,8 @@
 ---
 title: "Format json on vim properly."
 layout: post
-old_url: /2013/11/28/format-json-on-vim-properly
+redirect_from: /2013/11/28/format-json-on-vim-properly
+read_time: short read
 categories: ['published']
 ---
 

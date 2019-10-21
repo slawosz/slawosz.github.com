@@ -1,7 +1,8 @@
 ---
 title: "File open modes in ruby."
 layout: post
-old_url: /2013/11/21/file-open-modes-in-ruby
+redirect_from: /2013/11/21/file-open-modes-in-ruby
+read_time: short read
 categories: ['published']
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: "Logging best practices"
 layout: post
-old_url: /2015/10/14/logging-best-practices
+redirect_from: /2015/10/14/logging-best-practices
+read_time: 3 minutes read
 categories: ['published', 'featured']
 ---
 

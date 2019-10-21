@@ -1,7 +1,8 @@
 ---
 title: "Find and replace using regexp and sed."
 layout: post
-old_url: /2013/11/12/find-and-replace-sing-regexp-and-sed
+redirect_from: /2013/11/12/find-and-replace-using-regexp-and-sed
+read_time: short read
 categories: ['published']
 ---
 

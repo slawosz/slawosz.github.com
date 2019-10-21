@@ -1,6 +1,7 @@
 ---
 title: "Fast debugging in octave"
-old_url: /2013/12/02/fast-debugging-in-octave
+redirect_from: /2013/12/02/fast-debugging-in-octave
+read_time: short read
 layout: post
 categories: ['en']
 ---
