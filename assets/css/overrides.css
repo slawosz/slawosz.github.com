@@ -24,7 +24,7 @@
   padding: 0.5rem;
   font-size: 90%;
   margin-bottom: 0;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .article-post {
