@@ -28,5 +28,8 @@
 }
 
 .article-post {
-  font-size: 1.4rem;
+  font-size: 18px;
+}
+.article-post p {
+  margin: 1rem 0;
 }
