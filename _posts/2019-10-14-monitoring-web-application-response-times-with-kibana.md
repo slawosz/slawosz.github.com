@@ -13,7 +13,7 @@ After scaling, we can compare past and current metrics and see how our changes a
 
 ## Which metric should I use and why percentiles?
 
-The best metric in most scenarios is using response time percentiles. For those who don't know, percentiles are statistical measurements based on Gaussian normal distribution. Fortunately, we don't need to calculate anything. However, if you would like to learn more, you can read about it on Wikipedia. For this article and real life, percentile splits sorted set of values into two sub-sets. Percentile number, lets call it X, denotes how many percent of all original sets elements are in first set. Then, the biggest value of this set is value of percentile X. For example, in sets of requests, if we say 90th percentile of our request time is 200ms, this means that 90% of requests are faster than 200 ms. In other words, 9 of 10 users has an acceptable (200 ms) response time.
+The best metric in most scenarios is using response time percentiles. Percentiles are statistical measurements based on Gaussian normal distribution. Fortunately, we don't need to calculate anything. To learn more, you can read about on topic on Wikipedia. For this article and real life, to find given percentile `X` split sorted set of values into two sub-sets. Percentile value `X`, denotes how many percent of all original sets elements are in first set. Then, the biggest value of this set is value of percentile `X`. For example, in sets of requests, if we say 90th percentile of our request time is 200ms, this means that 90% of requests are faster than 200 ms. In other words, 9 of 10 users has an acceptable (200 ms) response time.
 
 ## Why not average?
 
@@ -49,7 +49,7 @@ Now, we need to create timelion search query. I will use `duration` as my durati
 .es(index=*, metric='percentiles:request_time:50,90')
 ```
 
-That's it! Let's take a look at the diagram below:
+This is very basic timelion query and it will plot exactly what we need
 
 ![Kibana percentiles diagram](/images/kibana-request-percentiles/kibana-percentiles.png)
 
@@ -64,7 +64,19 @@ however, the slowest are taking more then one second.
 
 ## Next steps
 
-There are several actions you can do to improve application response time.
+Our timelion query is very basic. In real life application, you might like to add some conditions to the query.
+
+### Only positive/negative response codes
+
+### Exclude ceratin paths
+
+### Learn more about timelion
+
+Timelion documentation is very good.
+
+## Speeding up application
+
+There are several actions you can do to improve application response time. Each of this tips deserve its own tutorial, but it is good starting point for googling.
 
 ### Temporailry increase number of servers
 
